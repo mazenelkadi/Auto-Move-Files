@@ -1,1 +1,3 @@
 # Auto-Move-Files
+
+The script monitors a user-specified folder (watched_folder) for any file changes. When a new file is created or an existing file is modified in this folder, the script moves the file to another specified folder (destination_folder). If a file with the same name already exists in the destination folder, the script generates a non-conflicting file name to avoid overwriting. The script handles file system events such as file creation and modification, and skips temporary or system files. This can be particularly useful for automatically organizing files, backup systems, or syncing folders. The script runs continuously and can be stopped with a KeyboardInterrupt (Ctrl+C).
